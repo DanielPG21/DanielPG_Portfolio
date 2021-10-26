@@ -1,3 +1,36 @@
+/* Fonts */
+@font-face {
+    font-family: 'robotoblack';
+    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
@@ -28,7 +61,13 @@ li a:hover {
     background-color: #FF884B;
 }  
 
-/* Gallery */
+/* Cover Image */
+div.cover {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Picture Gallery - Gallery */
 div.gallery {
     margin: 5px;
     border: 1px solid #FFFFFF;
@@ -46,8 +85,53 @@ div.gallery img {
     height: 400px;
     object-fit: cover;
 }
-  
-div.desc {
-    padding: 15px;
+
+div.video {
+    margin: 5px;
+    float: left;
+}
+
+/* Title */
+h1 {
+    font-family: robotoblack;
+    font-size: 60px;
     text-align: center;
+}
+
+/* Text Styles */
+p.a {
+    /* Font */
+    font-family: robotobold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.5;
+    /* Text Box Properties*/
+    background-color: #BCFFB9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    padding-block: 10px;
+    padding-left: 10px;
+}
+
+p.b {
+    font-family: robotoregular;
+    background-color: #BCFFB9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    padding-block: 10px;
+    padding-left: 10px;
+    line-height: 1.5;
+  }
+
+/* Home Image Grid */
+.grid{
+    text-align: center;
+}
+.row{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 5px;
 }
