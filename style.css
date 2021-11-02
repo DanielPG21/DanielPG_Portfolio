@@ -53,6 +53,14 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    /* Text Properties */
+    font-family: robotobold;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
 p.a {
     /* Text Properties */
     font-family: robotobold;
@@ -86,7 +94,7 @@ p.c {
     font-family: robotoregular;
     line-height: 1.5;
     /* Text Box Properties */
-    background-color: #96BAFF;
+    background-color: #A8E7E9;
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
@@ -160,12 +168,6 @@ div.desc {
     text-align: center;
 } 
 
-/* Video & Web Gallery - Gallery Div */
-div.video {
-    margin: 5px;
-    float: left;
-}
-
 /* Home - Image Grid */
 .grid{
     text-align: center;
@@ -187,5 +189,12 @@ div.video {
     display: inline-block;
     width: 40%;
     height: 40%;
+    margin: 5px;
+}
+
+.rowThree{
+    display: inline-block;
+    width: 15%;
+    height: 15%;
     margin: 5px;
 }
