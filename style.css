@@ -5,6 +5,7 @@
          url('assets/fonts/roboto-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-smooth: auto;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
          url('assets/fonts/roboto-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-smooth: auto;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
          url('assets/fonts/roboto-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-smooth: auto;
 }
 
 @font-face {
@@ -29,6 +32,25 @@
          url('assets/fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('assets/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
 }
 
 /* Text Styles */
@@ -62,6 +84,7 @@ h3 {
 }
 
 p.a {
+    box-sizing: border-box;
     /* Text Properties */
     font-family: robotobold;
     font-size: 40px;
@@ -92,12 +115,13 @@ p.b {
 p.c {
     /* Text Properties */
     font-family: robotoregular;
+    font-size: 20px;
     line-height: 1.5;
     /* Text Box Properties */
-    background-color: #A8E7E9;
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
+    max-width: 100%;
     padding-block: 10px;
     padding-left: 10px;
 }
@@ -108,7 +132,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7868E6;
+    background-color: #FFFFFF;
 }
   
 li {
@@ -117,14 +141,15 @@ li {
   
 li a {
     display: block;
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 li a:hover {
-    background-color: #FF884B;
+    color: #FFFFFF;
+    background-color: #000000;
 }  
 
 /* Title Image */
@@ -132,6 +157,11 @@ div.title {
     padding: 10px;
     position: relative;
     text-align: center;
+}
+
+.responsive {
+    width: 50%;
+    height: auto;
 }
 
 .centered {
@@ -146,7 +176,7 @@ div.title {
 }
 
 /* Picture Gallery - Gallery Div */
-div.gallery {
+/* div.gallery {
     margin: 5px;
     border: 1px solid #FFFFFF;
     float: left;
@@ -162,13 +192,13 @@ div.gallery img {
     width: 100%;
     height: 400px;
     object-fit: cover;
-}
+} */
 
-div.desc {
+/* div.desc {
     text-align: center;
-} 
+}  */
 
-/* Home - Image Grid */
+/* Grid - Portfolio */
 .grid{
     text-align: center;
 }
@@ -177,10 +207,26 @@ div.desc {
     display: inline-block;
     width: 400px;
     height: 400px;
-    margin: 5px;
+    margin: 25px;
 }
 
+.desc {
+    text-align: center;
+} 
+
+
 /* Photos Grid */
+.gridVideo{
+    text-align: center;
+}
+
+.rowVideo{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
 .gridTwo{
     text-align: center;
 }
@@ -191,6 +237,31 @@ div.desc {
     height: 40%;
     margin: 5px;
 }
+
+/* .button{
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button1 {
+    background-color: #FFFFFF;
+}
+
+.button1:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+} */
+
 
 .rowThree{
     display: inline-block;

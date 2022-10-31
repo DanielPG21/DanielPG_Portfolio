@@ -1,0 +1,183 @@
+/* Fonts */
+@font-face {
+    font-family: 'robotoblack';
+    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('assets/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1 {
+    font-family: robotoblack;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: robotoregular;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(10,10,10,0.75),rgba(10,10,10,0.75)), url(assets/Background.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: robotolight;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: #0A0A0A;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
