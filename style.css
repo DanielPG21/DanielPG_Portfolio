@@ -1,11 +1,13 @@
 /* Fonts */
 @font-face {
     font-family: 'robotoblack';
-    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+    src: url('assets/fonts2/roboto-black-webfont.woff2') format('woff2'),
          url('assets/fonts/roboto-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-smooth: auto;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+    /* -webkit-text-stroke-width: 0.2px; */
 }
 
 @font-face {
@@ -86,12 +88,11 @@ h3 {
 p.a {
     box-sizing: border-box;
     /* Text Properties */
-    font-family: robotobold;
-    font-size: 40px;
-    text-align: center;
+    font-family: robotoregular;
+    font-size: 20px;
     line-height: 1.5;
     /* Text Box Properties */
-    background-color: #BCFFB9;
+    background-color: #cecece;
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
