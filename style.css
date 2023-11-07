@@ -92,7 +92,7 @@ p.a {
     font-size: 20px;
     line-height: 1.5;
     /* Text Box Properties */
-    background-color: #cecece;
+    /* background-color: #cecece; */
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
@@ -104,8 +104,9 @@ p.a {
     p.a {
       float: none;
       width: 100%;
-    }}
-    
+    }
+}
+
 p.b {
     /* Text Properties */
     font-family: robotoregular;
@@ -156,7 +157,7 @@ li a {
   
 li a:hover {
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #262626;
 }  
 
 /* Title Image */
@@ -276,3 +277,68 @@ div.gallery img {
     height: 15%;
     margin: 5px;
 }
+
+/* .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  } */
+
+.button {
+  background-color:#262626;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  /* letter-spacing: 1.25px; */
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  /* margin-left: 10px; */
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #262626;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#262626;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#262626; }
