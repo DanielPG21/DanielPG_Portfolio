@@ -241,7 +241,14 @@ div.gallery img {
     display: inline-block;
     width: 400px;
     height: 400px;
-    margin: 25px;
+    margin: .5px;
+}
+
+.row2{
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    margin: .5px;
 }
 
 .desc {
