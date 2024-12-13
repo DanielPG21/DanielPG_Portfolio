@@ -255,6 +255,17 @@ div.gallery img {
     max-width: 100%;
 }
 
+.row2B{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin: .5px;
+    /* padding: 0;
+    display: block; */
+    /* max-height: 100%;
+    max-width: 100%; */
+}
+
 .desc {
     text-align: center;
 } 
